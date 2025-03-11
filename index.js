@@ -1,0 +1,10 @@
+const nav_btn = document.getElementById('menu')
+const navBar = document.getElementById('navbar')
+const nav = document.getElementById('nav--item')
+console.log(nav_btn)
+nav_btn.addEventListener('click' , (e) => {
+    nav_btn.classList.toggle("fa-xmark")
+    navBar.classList.toggle("nav--hide")
+    nav.classList.toggle('nav--bar')
+    console.log(nav)
+} )

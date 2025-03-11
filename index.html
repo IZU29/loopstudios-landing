@@ -3,25 +3,36 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="stylesheet" href="fontawesome-free-6.7.2-web/css/all.min.css" >
   <link rel="stylesheet" href="style.css">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
   <title>Frontend Mentor | Loopstudios landing page</title>
-  
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
  
 </head>
 <body>
   <section class="header header--first">
-    <div class="container">
-    <div class="nav">
-      <img src="images/logo.svg" alt="" srcset="">
+    <div class="nav" id="nav--item">
+      <div class="container box">
+      <div class="icon">
+        <img src="images/logo.svg" alt="" srcset="">
+        <i class="fa-solid fa-bars menu" id="menu"></i>
+      </div>
+        
+          <ul class="nav--hide nav--links " id="navbar">
+  <li class="nav--link title">About</li>
+  <li class="nav--link title">Careers</li>
+  <li class="nav--link title">Events</li>
+  <li class="nav--link title">Products</li>
+  <li class="nav--link title">Support</li>
+      </ul>
       <!-- <img src="images/" alt="" srcset=""> -->
-    <nav class="nav--bar"></nav>
-
-  </div>
+    </div>
+    </div>
+    <div class="container">
   <div class="first--context">
     <p class="title">Immersive experiences that deliver</p>
   </div>
@@ -100,4 +111,5 @@
   © 2021 Loopstudios. All rights reserved. -->
 
 </body>
+<script src="index.js"></script>
 </html>

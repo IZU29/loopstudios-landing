@@ -9,6 +9,16 @@ body{
 img{
     max-width: 100%;
 }
+.icon{
+    display: flex;
+    justify-content: space-between;
+    /* border: 1px solid red; */
+}
+i{
+    font-size: 30px;
+    color: white;
+    /* width: 30px; */
+}
 /* font-family: "Josefin Sans", sans-serif; */
 /* font-family: "Alata", sans-serif; */
 .text{
@@ -27,11 +37,6 @@ img{
     background: url('images/mobile/image-hero.jpg');
     background-size: cover;
     background-repeat: no-repeat;
-    
-    /* background-size: cover; */
-}
-.nav{
-    /* border: 1px solid white; */
 }
 .container{
     width: 90%;
@@ -55,6 +60,40 @@ img{
     color: white;
     /* text-align: center; */
     padding: 0.3em;
+}
+.nav--bar{
+    position: absolute;
+    background-color: black;
+    /* border: 1px solid red; */
+    width: 100%;
+    min-height: 100vh;
+    color: white;
+    
+    /* z-index: 1; */
+}
+.nav--links{
+    margin: 0;
+    padding: 0.5em;
+    
+    display: flex;
+    flex-direction: column;
+    /* border: 1px solid white; */
+    list-style-type: none;
+    /* align-items: center; */
+    justify-content: space-evenly;
+    height: 0;
+    visibility: visible;
+    min-height: 400px;
+    
+}
+.nav--hide{
+    visibility: hidden;
+    display: flex;
+    flex-direction: row;
+    min-height: 0;
+}
+.nav--link{
+    /* margin-top: 2em; */
 }
 .header--second{
     /* min-height: 600px; */
@@ -147,7 +186,6 @@ button{
     
 }
 .last--content{
-    
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -251,5 +289,21 @@ button{
     }
     img + img{
         margin-left: 1.2em;
+    }
+    i{
+        visibility: hidden;
+    }
+    .box{
+        display: flex;
+        justify-content: space-between;
+        /* border: 1px solid white; */
+    }
+    .nav--hide{
+        visibility: visible;
+        /* justify-content: space-between; */
+    }
+    .nav--link{
+        margin-left: 1.2em;
+        color: white;
     }
 }
